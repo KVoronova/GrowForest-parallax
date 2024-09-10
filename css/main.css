@@ -9,3 +9,34 @@ html, body {
     background-color: #2B474B;
     color: white;
 }
+
+.slider {
+    height: 100%;
+    position: relative;
+}
+
+
+.slider__layer {
+    inset: 0;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    will-change: transform;
+}
+
+.slider__item {
+    overflow: hidden;
+    transform: scale(1.25)!important;  /*1.25*/
+    transition: 2s ease!important;
+}
+
+.slider__item:not(.swiper-slide-active) {
+    transform: scale(1)!important;
+} 
+
+
+.slide-ui {
+    position: absolute;
+    z-index: 10;
+    inset: 0;
+}
