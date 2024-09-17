@@ -178,6 +178,7 @@ body {
     justify-content: center;
     align-items: center;
     line-height: 1;
+    flex-direction: column;
 }
 
 .header-content__slide {
@@ -206,4 +207,14 @@ body {
 
 .header-bottom {
     min-height: 120px;
+}
+
+.letters,
+.letter {
+    text-shadow: 25px 0 35px rgba(0, 0, 0, .5);
+    position: relative;
+    margin-left: calc(var(--index) * -2.65);
+    right: calc(var(--index) * -2.65);
+    opacity: 0;
+
 }
